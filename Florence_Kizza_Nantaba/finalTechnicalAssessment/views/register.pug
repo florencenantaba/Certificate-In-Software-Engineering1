@@ -1,0 +1,82 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  link(rel='stylesheet' href='./bootstrap-5.3.0-alpha1-dist/css/bootstrap.css')
+  link(rel='stylesheet' href='./style.css')
+form(action='/register' onsubmit="return Validate();" method='POST')
+  .row(style='width:70%; margin: auto; border:black solid 1px; padding-left:40px;')
+    #heading.row(style='background-color:black; height:60px;')
+      h3(style='color: white; margin: auto;') GENQ KYC FORM
+    // heading 1
+    .container
+      .row
+        #heading1.col
+          | Bio Data
+    // underline
+    .container
+      .row
+        #underline.col
+    .row(style='margin-top:20px;')
+      .col-md-6
+        // div1
+        div
+          input#firstname.form-control(type='text' name='firstname' placeholder='First name')
+        div
+          input#dob.form-control(type='text' name='dob' placeholder='Date of Birth (DD/MM/YYYY)')
+      // div2
+      .col-md-6
+        div
+          input#lastname.form-control(type='text' name='lastname' placeholder='Last name')
+        div
+          input#gender.form-control(type='text' name='gender' placeholder='Gender')
+        
+    // heading 2
+    .container
+      .row
+        #heading1.col
+          | Location
+    // underline 2
+    .container
+      .row
+        #underline.col
+    // tap2
+    .row(style='margin-top:20px;')
+      .col-md-6
+        // div1
+        div
+          input#country.form-control(type='text' name='country' placeholder='Country')
+        div
+          input#town.form-control(type='text' name='town' placeholder='Town')
+      // div2
+      .col-md-6
+        div
+          input#state.form-control(type='text' name='state' placeholder='State /District')
+        div
+          input#zip_code.form-control(type='text' name='zip_code' placeholder='Zip Code')
+    // contacts
+    // heading 1
+    .container
+      .row
+        #heading1.col
+          | Bio Data
+    // underline
+    .container
+      .row
+        #underline.col
+    .row(style='margin-top:20px;')
+      .col-md-6
+        // div1
+        div
+          input#phonenumber1.form-control(type='text' name='phonenumber1' placeholder='Phone Number1')
+      // div2
+      .col-md-6
+        div
+          input#phonenumber2.form-control(type='text' name='phonenumber2' placeholder='Phone Number2')
+    .row
+      div
+        input#email.form-control(type='text' name='email' placeholder='Email')
+    button#btn(type='submit') Submit
+
+script(src='./bootstrap-5.3.0-alpha1-dist/js/bootstrap.js')
+script(src='./index.js')
