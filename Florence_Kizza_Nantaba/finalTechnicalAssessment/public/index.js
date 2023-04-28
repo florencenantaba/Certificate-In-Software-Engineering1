@@ -83,7 +83,7 @@ const Validate = () => {
     else{
         gender.style.border= '3px solid green'; 
     }
-
+   // validating phonenumber
     if (phonenumber1.value==''){
         phonenumber1.style.border= '3px solid red';
         return false
@@ -100,7 +100,7 @@ const Validate = () => {
         phonenumber2.style.border= '3px solid green'; 
     }
 
-
+ // 
     if (email.value==''){
         email.style.border= '3px solid red';
         return false
