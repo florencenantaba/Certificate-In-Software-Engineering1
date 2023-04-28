@@ -6,7 +6,7 @@
             background-color: orange;
             color: white;
             width: 300px;
-            margin-left:500px;
+            margin-left:600px;
             height:50px;
             border-radius: 10px;
             font-size: 20px;
@@ -30,5 +30,23 @@
         margin-bottom: 10px;
     }
     #GivenName{
+        margin-bottom: 10px;
+    }
+    #firstname{
+        margin-bottom: 10px;
+    }
+    #lastname{
+        margin-bottom: 10px;
+    }
+    #gender{
+        margin-bottom: 10px;
+    }
+    #country{
+        margin-bottom: 10px;
+    }
+    #state{
+        margin-bottom: 10px;
+    }
+    #phonenumber1{
         margin-bottom: 10px;
     }
